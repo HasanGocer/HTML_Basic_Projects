@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title> First Web Project </title>
+    </head>
+
+    <body>
+        <form action="" method="get">
+            <fieldset>
+
+                <legend>Giriş Yap</legend>
+
+                <label for="kadi">kullanici adi</label> 
+                <input required id="kadi" type="text"> <br>
+
+                <label for="sifre">sifre</label>
+                <input required id="sifre" type="password"><br>
+
+                <label for="eposta">Email</label>
+                <input id="eposta" type="email"><br>
+
+                <label for="dosya">Dosya seç</label>
+                <input id="dosya" type="file"><br>
+
+            </fieldset>
+
+            <select name="dil" id="dil" required>
+                <option value="CSS">CSS</option>
+                <option value="HTML">HTML</option>
+                <option value="JS">JS</option>
+            </select> <br>
+
+            <input list="diller" required>
+            <datalist id="diller" >
+                <option value="HTML">
+                <option value="CSS">
+                <option value="JS">
+            </datalist> <br>
+
+            <label>
+                <input required type="checkbox"> kurallari kabul ediyorum
+            </label> <br>
+
+            <label>
+                <input type="radio" name="cinsiyet" required value="erkek"> erkek
+            </label>
+
+            <label>
+                <input type="radio" name="cinsiyet" required value="kadin"> kadin
+            </label><br>
+
+            <input type="hidden" name="test" value="test">
+            <input type="submit" value="gönder" formmethod="post" formaction="ListProject.html"><br>
+            <button type="submit">Gönder 2</button><br>
+            <input type="reset" value="sifirla">
+
+            <br><br><br>
+
+            <textarea name="öneri" id="" cols="80" rows="10"></textarea>
+
+        </form>
+
+    </body>
+
+
+</html>
